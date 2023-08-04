@@ -73,14 +73,18 @@
       </div>
     </div>
 
-    <div class="sm:mx-3 pt-6 space-y-8" v-if="activeTab == 'skills'">
-      <h4 class="drop-shadow-lg text-white font-bold">Technologies</h4>
+    <div class="sm:mx-3 pt-6 space-y-4" v-if="activeTab == 'skills'">
+      <h4 class="drop-shadow-lg text-white font-bold">Languages & Technologies</h4>
 
-      <h4 class="drop-shadow-lg text-white font-bold">Languages</h4>
+      <p class="drop-shadow-lg text-white text-ms">Laravel, Symfony Doctrine, PHPUnit, Pest, Vue, Vuex / Pinia, React, React Native, jQuery, TailwindCSS, BootstrapCSS, Xamarin Forms, SwiftUI, UIKit, PHP, JavaScript / TypeScript, Swift, C#, Python, Livewire, WordPress, Doctrine, AWS EC2, AWS S3, ZenDesk, Ubuntu & CentOS Servers, AWS SQS, Pusher</p>
 
       <h4 class="drop-shadow-lg text-white font-bold">Tools</h4>
 
+      <p class="drop-shadow-lg text-white text-ms">MacBook Pro, iPhone 14 Pro Max, Yeti X Professional Microphone, Visual Studio Code, PHPStorm, WebStorm, XCode, Visual Studio, Hyper Terminal, Notion, TablePlus, Spark Mail, Bear Notes App</p>
+
       <h4 class="drop-shadow-lg text-white font-bold">Favorite Books</h4>
+
+      <p class="drop-shadow-lg text-white text-ms">Structure and Interpretations of Computer Programs, The Pragmatic Programmer, Refactoring to Patterns, There Are Two Errors in the the Title of This Book, The Hunger Games, Vera's Melancholy</p>
     </div>
   </div>
 </template>
