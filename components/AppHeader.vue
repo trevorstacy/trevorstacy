@@ -39,6 +39,7 @@
     colorMode.value = colorMode.value == 'light' ?
                       colorMode.value = 'dark' :
                       colorMode.value = 'light';
+    colorMode.preference = colorMode.value;
 
     localStorage.setItem('nuxt-color-mode', colorMode.value);
   }
