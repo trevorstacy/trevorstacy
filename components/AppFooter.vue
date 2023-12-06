@@ -1,5 +1,5 @@
 <template>
-  <footer class="justify-center relative sm:pb-0 sm:absolute sm:left-28 sm:bottom-4 flex items-center gap-6 mx-3">
+  <footer class="absolute bottom-4 left-32">
     <div style="transform: translateX(-48px); opacity: 0" class="site-made-with flex items-center text-[#201004] dark:text-white">
       <span class="mix-blend-color-burn opacity-75 dark:opacity-100">Made with</span>
 
