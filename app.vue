@@ -11,6 +11,7 @@
         alt="Vue JS Logo"
         class="vue-logo absolute bottom-96 right-64 drop-shadow-logo w-48 mix-blend-overlay dark:mix-blend-normal dark:drop-shadow-logo-dark dark:opacity-40"
         style="transform: rotate(-25deg) skewY(-8deg) translateX(50px) translateY(-60px); opacity: 0"
+        draggable="false"
       />
     </div>
 
@@ -20,6 +21,7 @@
         alt="Laravel Logo"
         class="laravel-logo absolute bottom-80 right-[28rem] drop-shadow-logo h-32 w-32 mix-blend-overlay dark:mix-blend-normal dark:drop-shadow-logo-dark dark:opacity-30 rounded-3xl select-none"
         style="transform: rotate(8deg) translateY(-40px); opacity: 0"
+        draggable="false"
       />
     </div>
 
@@ -29,6 +31,7 @@
         alt="SwiftUI Logo"
         class="swiftui-logo absolute bottom-56 right-[18rem] drop-shadow-logo h-24 w-24 mix-blend-overlay dark:drop-shadow-logo-dark dark:opacity-30 rounded-3xl select-none"
         style="transform: rotate(48deg) translateX(-10px) translateY(40px); opacity: 0"
+        draggable="false"
       />
     </div>
   </div>
