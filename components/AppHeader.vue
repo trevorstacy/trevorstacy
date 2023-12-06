@@ -7,7 +7,7 @@
         height="48"
         width="48"
         viewBox="0 96 960 960"
-        v-if="$colorMode.preference == 'light'"
+        v-show="colorMode.value == 'light'"
       ><path d="M480 936q-150 0-255-105T120 576q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480 936Zm0-60q109 0 190-67.5T771 650q-25 11-53.667 16.5Q688.667 672 660 672q-114.689 0-195.345-80.655Q384 510.689 384 396q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180 576q0 125 87.5 212.5T480 876Zm-4-297Z"/></svg>
 
       <svg
@@ -16,7 +16,7 @@
         height="48"
         width="48"
         viewBox="0 96 960 960"
-        v-else
+        v-show="colorMode.value == 'dark'"
       ><path d="M480 936q-150 0-255-105T120 576q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480 936Z"/></svg>
     </button>
 
@@ -36,12 +36,17 @@
   const colorMode = useColorMode();
 
   function onToggleTheme() {
-    colorMode.preference = colorMode.preference == 'light' ?
-                           colorMode.preference = 'dark' :
-                           colorMode.preference = 'light';
+    colorMode.value = colorMode.value == 'light' ?
+                      colorMode.value = 'dark' :
+                      colorMode.value = 'light';
+
+    localStorage.setItem('nuxt-color-mode', colorMode.value);
   }
 
   onMounted(() => {
+    colorMode.preference = localStorage.getItem('nuxt-color-mode') || 'light';
+    colorMode.value = localStorage.getItem('nuxt-color-mode') || 'light';
+
     anime({
       targets: '.header-links',
       easing: 'easeOutExpo',

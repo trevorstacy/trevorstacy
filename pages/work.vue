@@ -1,6 +1,14 @@
 <template>
-  <div class="px-16 pt-12 pb-8 sm:p-28 w-full sm:w-7/12 z-50">
-    <h1 style="transform: translateY(-32px)" class="hero-header font-bold mb-4 text-2xl sm:text-6xl text-[#ffffffc2] opacity-0">Work</h1>
+  <div class="px-16 pt-12 pb-8 sm:p-28 w-full lg:w-7/12 xl:9/12">
+    <h1 style="transform: translateY(-32px)" class="hero-header font-bold inline-flex mb-4 text-2xl sm:text-6xl text-[#ffffffc2] opacity-0">Work</h1>
+
+    <div style="transform: translateY(-32px)" class="breadcrumbs flex items-center gap-1 opacity-0 py-6 px-0 sm:px-4 z-50">
+      <NuxtLink to="/" class="text-white">Home</NuxtLink>
+
+      <span class="material-symbols-outlined text-white">pen_size_2</span>
+
+      <div class="text-white opacity-80">Work</div>
+    </div>
 
     <div style="transform: translateY(-32px)" class="hero-links flex items-center gap-6 sm:mx-3 pt-4 opacity-0">
       <a
@@ -100,7 +108,7 @@
 
   onMounted(() => {
     anime({
-      targets: ['.hero-header', '.hero-links', '.hero-body'],
+      targets: ['.hero-header', '.breadcrumbs', '.hero-links', '.hero-body'],
       easing: 'easeOutExpo',
       duration: 1000,
       opacity: 1,
