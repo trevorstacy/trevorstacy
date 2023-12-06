@@ -31,8 +31,6 @@
         style="transform: rotate(48deg) translateX(-10px) translateY(40px); opacity: 0"
       />
     </div>
-
-    <AppFooter/>
   </div>
 </template>
 
