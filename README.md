@@ -1,3 +1,3 @@
-Full stack developer.
+Full stack developer
 
 https://www.trevorstacy.com/
